@@ -54,9 +54,10 @@ h2{
 }
 
 button{
-    width: 80px;
+    background: antiquewhite;
+    width: 85px;
     margin: 5px;
-    padding: 3px 5px;
+    padding: 5px 7px;
     border-radius: 4px;
     border: none;
 }
