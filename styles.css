@@ -8,13 +8,12 @@
 main{
     display: flex;
     flex-direction: row;
-    
+
 }
 
 .container{
-    background: red;
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 1fr;
     width: 17vw;
     margin: 80px auto auto auto;
 }
@@ -22,6 +21,7 @@ main{
 
 
 .card{
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     background: yellow;
@@ -34,8 +34,8 @@ main{
 }
 
 .card span{
+    margin-top: 5px;
     font-size: 10px;
-    margin: auto;
 }
 
 
@@ -58,10 +58,12 @@ button{
     margin: 5px;
     padding: 3px 5px;
     border-radius: 4px;
+    border: none;
 }
 
 
 span{
+    margin-top: px;
     padding: 10px;
     background: antiquewhite;
     font-size: 11px;
@@ -69,4 +71,19 @@ span{
     text-align: center;
     line-height: 15px;
     border-radius: 5px;
+}
+
+@media screen and (max-width: 960px) {
+    main{
+        display: block;
+        flex-direction: row;
+    
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 40vw;
+        margin: 80px auto auto auto;
+    }
 }
